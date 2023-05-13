@@ -1,0 +1,92 @@
+body{
+    color: black;
+    direction: rtl;
+    background-color: white;
+    font-size: 14px;
+    font-family: Tahoma;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: gray;
+}
+
+/* .intro{
+    text-align: center;
+}
+
+.intro h1{
+    color: aqua;
+}
+
+.intro p{
+    color: gray;
+} */
+a:visited{
+    color: red;
+}
+.row{
+    display: flex;
+    text-align: center;
+    padding: 25px;
+    margin: 15px;
+}
+
+.row div{
+    height: 150px;
+    width: 50%;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+    border-radius: 0px 20px 0px 20px;
+}
+.blue:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.green{
+    background-color: green;
+    
+}
+.yellow{
+    background-color: yellow;
+
+}
+
+#intro{
+    background-color: gray;
+    /* position: fixed; */
+}
+
+#contribute{
+    background-color: gray;
+}
+
+#about_us{
+    background-color: gray;
+    /* border: solid 3px #000; */
+    border-radius: 15px;
+}
+
+
+.section-title{
+    color: white;
+    text-align: center;
+    /* position: absolute;
+    z-index: -1; */
+}
+
+.container{
+    width: 100%;
+    padding: 20px;
+}
+.section-gray{
+    background-color: rgb(189, 189, 189);
+}
