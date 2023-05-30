@@ -575,7 +575,7 @@
         font-size: 18pt;
         font-family: Tahoma;
         font-weight: bold;
-        color: rgb(2, 91, 192);
+        color: #00d2d3;
         text-align: center;
         padding-top: 30px;
     }
@@ -636,7 +636,7 @@
     .form input[type="submit"] {
         width: 10%;
         height: 25px;
-        background: #1dd1a1;
+        background: #00d2d3;
         padding: 12p;
         margin: 10px;
         font-size: 14px;
