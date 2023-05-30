@@ -476,7 +476,7 @@
         float: right;
     }
     
-    .right .symbol {
+    .symbol {
         height: 150px;
         width: 150px;
         /*background-color: rgb(23, 12, 170);*/
@@ -489,13 +489,6 @@
         /*background-color: rgb(105, 179, 10);*/
         float: left;
         padding-top: 40px;
-    }
-    
-    .left .symbol {
-        height: 150px;
-        width: 150px;
-        /*background-color: rgb(23, 12, 170);*/
-        float: right;
     }
     
     .left .text {
