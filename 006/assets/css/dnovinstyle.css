@@ -1,0 +1,742 @@
+    body {
+        direction: rtl;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /************ شروع بخش header ***********/
+    
+    #header {
+        width: 100%;
+        height: 115px;
+        background-color: rgb(234, 245, 240);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo img {
+        width: 90px;
+        height: 70px;
+        direction: rtl;
+        padding: 20px;
+        float: right;
+    }
+    
+    .menu ul {
+        position: relative;
+        padding-top: 70px;
+    }
+    
+    .menu ul li {
+        display: inline-block;
+        direction: rtl;
+        padding: 10px;
+        line-height: 20px;
+        font-family: Tahoma;
+        font-size: 14pt;
+        color: black;
+        transition-duration: 0.5s;
+        padding-right: 0px;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .menu a:visited {
+        color: black;
+    }
+    
+    .menu ul li:hover {
+        background-color: rgb(173, 173, 199);
+    }
+    
+    .menu ul li:hover>ul {
+        display: block;
+    }
+    
+    .menu ul li ul {
+        position: absolute;
+        display: none;
+        background-color: rgb(183, 192, 189);
+        width: 150px;
+        height: 120px;
+        margin-top: 10px;
+        padding: 7px;
+    }
+    
+    .menu ul li ul li {
+        width: 100%;
+        font-size: 10pt;
+        display: inline-block;
+        direction: rtl;
+        padding: 10px;
+        line-height: 20px;
+        color: black;
+        transition-duration: 0.5s;
+    }
+    
+    .contact p {
+        float: left;
+        font-size: 14pt;
+        padding: 0 !important;
+        margin: 0 !important;
+        padding-top: 70px !important;
+    }
+    
+    .contact img {
+        float: left;
+        padding-top: 70px;
+        width: 20px;
+        height: 20px;
+        margin-left: 30px;
+    }
+    /************ شروع بخش intro ***********/
+    
+    #intro {
+        height: 300px;
+        width: 100%;
+        background: url('../img/banner01.jpg');
+        background-size: cover;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 300px;
+        padding-top: 0px;
+        margin: 0px;
+        position: relative;
+    }
+    
+    .banner-title {
+        color: rgb(213, 194, 247);
+        text-align: right;
+        margin-right: 60px;
+        margin-top: 140px;
+        position: absolute;
+        padding: 20px;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    .title {
+        margin: 50px 50px 50px 50px;
+        text-align: center;
+        font-size: 16pt;
+        font-family: tahoma;
+        font-weight: bold;
+    }
+    /************ شروع بخش باکس ها***********/
+    
+    .row {
+        display: flex;
+        text-align: center;
+        padding: 0px;
+        margin: 1px;
+        font-size: 11pt;
+        font-family: tahoma;
+        text-align: justify;
+        line-height: 1.5 !important;
+        align-items: center;
+        font-weight: bold;
+        direction: rtl;
+    }
+    
+    .row div {
+        height: 80px;
+        width: 50%;
+        padding: 10px;
+        direction: rtl;
+    }
+    
+    .row div:hover {
+        background-color: rgb(9, 33, 68);
+        cursor: pointer;
+        color: white;
+    }
+    
+    .box {
+        display: flex;
+        border: solid 1px gray;
+    }
+    
+    .box .frame {
+        height: 55px;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    .frame .text {
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        background-color: rgb(9, 33, 68);
+        border-radius: 100px;
+        float: left;
+        text-align: center;
+        color: white;
+    }
+    
+    .frame .text:hover {
+        background-color: white;
+        cursor: pointer;
+        color: rgb(9, 33, 68);
+    }
+    
+    .box .titr {
+        text-align: center;
+        height: 40px;
+        width: 70%;
+        text-align: right;
+        padding-top: 25px;
+    }
+    /************ شروع بخش مشتریان ما ***********/
+    
+    .row2 {
+        display: flex;
+        text-align: center;
+        padding: 10px;
+        margin: 30px;
+        margin-top: 20px;
+        font-size: 14pt;
+        font-family: tahoma border;
+    }
+    
+    .animate {
+        animation-name: scale;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+    
+    .animate:hover {
+        animation-play-state: running;
+    }
+    
+    @keyframes scale {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(.5)
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .row2 div {
+        height: 140px;
+        width: 50%;
+    }
+    
+    .row2 div img {
+        height: 140px;
+        width: 140px;
+    }
+    /************ شروع بخش اخبار ***********/
+    
+    #parallaxO1 {
+        height: 100%;
+        z-index: 5;
+        position: relative;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.26);
+        opacity: 0.5;
+    }
+    
+    .parallax01-image {
+        height: 650px;
+        width: 100%;
+        background-size: cover;
+        background-image: url('../img/news.jpg');
+        margin: 0px;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.26);
+    }
+    
+    .title-heading {
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .panel-body {
+        height: 400px;
+        display: flex;
+        margin: 80px;
+        align-items: center;
+    }
+    
+    .news-item {
+        height: 350px;
+        width: 100%;
+        border: solid 5px gray;
+        padding: 40px;
+        margin: 20px;
+        position: relative;
+    }
+    
+    .news-item:hover {
+        background-color: rgb(9, 33, 68);
+        /*cursor: pointer;*/
+        border: solid 5px rgb(9, 33, 68);
+        transition: all .3s ease-in-out;
+    }
+    
+    .news-title {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        text-align: justify;
+    }
+    
+    .news-text p {
+        padding-top: 40px;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        text-align: justify;
+        line-height: 1.5 !important;
+    }
+    
+    .news-more {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        direction: ltr;
+        font-weight: bold;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    
+    .news-more a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .news-more a:visited {
+        color: inherit;
+    }
+    /************ شروع بخش خدمات ما ***********/
+    
+    .row4 {
+        display: flex;
+        text-align: center;
+        padding: 0px;
+        margin: 1px;
+        font-size: 14pt;
+        font-family: tahoma
+    }
+    
+    .row4 div {
+        height: 300px;
+        width: 50%;
+    }
+    
+    .row4 img {
+        height: 300px;
+        width: 600px;
+        position: relative;
+    }
+    
+    .row4 h4 {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 80px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        text-align: justify;
+    }
+    
+    .row4 p {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 80px;
+        padding-top: 20px;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        text-align: justify;
+        line-height: 1.5 !important;
+        align-items: center;
+    }
+    
+    .row4 .image {
+        position: relative;
+    }
+    
+    .anime {
+        height: 250px !important;
+        width: 540px!important;
+        position: absolute;
+        border: 2px solid rgb(231, 226, 226);
+        z-index: 100;
+        margin-top: 22px;
+        margin-right: 64px;
+    }
+    
+    .anime .left {
+        float: left;
+    }
+    
+    .anime {
+        animation-name: scale;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+    
+    .anime:hover {
+        animation-play-state: running;
+    }
+    
+    @keyframes scale {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(.0)
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    /************ شروع بخش درباره ما ***********/
+    
+    #about-us {
+        height: 1120px;
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 30px;
+        box-shadow: 0 0 10px #c1c7ca;
+    }
+    
+    .row5 .body {
+        position: relative;
+        height: 1100px;
+        width: 100%;
+    }
+    
+    .visit-card {
+        position: absolute;
+        height: 300px;
+        width: 600px;
+        background-image: url('../img/visit.jpg');
+        z-index: 100;
+    }
+    
+    .Attributes {
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 80px;
+        margin-right: 80px;
+        height: 750px;
+        width: 80%;
+        padding: 50px;
+        border: 10px solid #ced5d8;
+        background-image: url('../img/003.jpg');
+        background-size: cover;
+    }
+    
+    .Attributes .body {
+        height: 500px;
+        width: 80%;
+        margin-right: 67px;
+        margin-bottom: 30px;
+        margin-left: 67px;
+        position: absolute;
+        margin-top: 200px;
+        position: absolute;
+    }
+    
+    .row6 {
+        height: 160px;
+        width: 100%px;
+        padding: 2px;
+    }
+    
+    .left {
+        height: 150px;
+        width: 450px;
+        float: left;
+    }
+    
+    .right {
+        height: 150px;
+        width: 450px;
+        float: right;
+    }
+    
+    .right .symbol {
+        height: 150px;
+        width: 150px;
+        /*background-color: rgb(23, 12, 170);*/
+        float: right;
+    }
+    
+    .right .text {
+        height: 150px;
+        width: 300px;
+        /*background-color: rgb(105, 179, 10);*/
+        float: left;
+        padding-top: 40px;
+    }
+    
+    .left .symbol {
+        height: 150px;
+        width: 150px;
+        /*background-color: rgb(23, 12, 170);*/
+        float: right;
+    }
+    
+    .left .text {
+        height: 150px;
+        width: 300px;
+        /*background-color: rgb(105, 179, 10);*/
+        float: left;
+        padding-top: 40px;
+    }
+    
+    .text p {
+        font-family: tahoma;
+        font-size: 11pt;
+        text-align: justify;
+        line-height: 1.5 !important;
+    }
+    
+    .text h4 {
+        font-family: tahoma;
+        font-weight: bold;
+        padding-bottom: 7px;
+    }
+    
+    .symbol img {
+        height: 150px;
+        width: 150px;
+    }
+    /************ شروع بخش دیدگاهان در یک نگاه******/
+    
+    #parallaxO2 {
+        height: 100%;
+        z-index: 5;
+        position: relative;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.26);
+        opacity: 0.5;
+    }
+    
+    .parallax02-image {
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-image: url('../img/004.jpg');
+        margin: 0px;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.26);
+    }
+    
+    .statistics-body {
+        height: 130px;
+        width: 70%;
+        padding-right: 200px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+    }
+    
+    .number {
+        height: 110px;
+        width: 50%;
+        padding: 10px;
+        display: flex;
+    }
+    
+    .number .text {
+        height: 80px;
+        width: 50%;
+        font-size: 12pt;
+        font-family: Tahoma;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .digit {
+        height: 80px;
+        width: 50%;
+        font-size: 18pt;
+        font-family: Tahoma;
+        font-weight: bold;
+        color: rgb(2, 91, 192);
+        text-align: center;
+        padding-top: 30px;
+    }
+    /************ شروع بخش تماس با ما ***********/
+    
+    .row8 .body {
+        height: 350px;
+        width: 100%;
+        background: url('../img/milad.jpg');
+        display: flex;
+        padding-top: 30px;
+        position: relative;
+    }
+    
+    .form {
+        height: 430px;
+        width: 40%;
+        background-color: white;
+        float: right;
+        position: absolute;
+        margin-right: 110px;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.26);
+        padding: 30px;
+    }
+    
+    .text h3 {
+        font-size: 14pt;
+        font-family: tahoma;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    
+    .form input[type="first-name"],
+    .form input[type="lastt-name"],
+    .form input[type="date"],
+    .form input[type="number"],
+    .form input[type="email"],
+    .form input[type="topic"] {
+        width: 45%;
+        padding: 12px;
+        margin: 10px;
+    }
+    
+    .form input[type="date"],
+    .form input[type="number"] {
+        width: 33%;
+        padding: 12px;
+        margin: 10px;
+    }
+    
+    .form textarea {
+        width: 95%;
+        height: 150px;
+        padding: 12px;
+        margin: 10px;
+    }
+    
+    .form input[type="submit"] {
+        width: 10%;
+        height: 25px;
+        background: #1dd1a1;
+        padding: 12p;
+        margin: 10px;
+        font-size: 14px;
+        font-family: tahoma;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .form input[type="submit"]:hover {
+        background: #7f8c8d;
+    }
+    
+    .Contacts {
+        height: 430px;
+        width: 25%;
+        background-color: #00d2d3;
+        float: left;
+        position: absolute;
+        margin-right: 850px;
+        padding: 30px;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.26);
+    }
+    
+    .Contacts .text h3 {
+        color: white
+    }
+    
+    .Information {
+        height: 80px;
+        width: 90%;
+        display: flex;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .icon img {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+    }
+    
+    .Information .c-text {
+        height: 80px;
+        width: 70%;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+    }
+    
+    .c-text p {
+        font-size: 14px;
+        font-family: tahoma;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    /************ شروع بخش فوتر ***********/
+    
+    .row9 {
+        width: 100%;
+        height: 250px;
+        background-color: rgb(9, 33, 68);
+        padding-top: 40px;
+        margin-top: 200px;
+    }
+    
+    .logotype img {
+        width: 125px;
+        height: 90px;
+        margin: 0 auto 0;
+        display: block;
+    }
+    
+    .social-media {
+        width: 500px;
+        height: 60px;
+        display: flex;
+        margin-top: 20px;
+        padding: 10px;
+        margin-right: 490px;
+    }
+    
+    .media {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50px;
+        margin: 10px;
+        position: relative;
+    }
+    
+    .media img {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    
+    .media:hover {
+        background-color: #81ecec;
+        cursor: pointer;
+    }
