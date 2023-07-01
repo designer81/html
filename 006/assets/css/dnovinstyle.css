@@ -1,5 +1,16 @@
+@font-face {
+    font-family: Iransans;
+    src:
+    url('../fonts/iransans/Iransans.eot') format('embedded-opentype')
+    url('../fonts/Iransans/Iransans.woff') format('woff')
+    url('../fonts/iransans/Iransans.ttf') format('truetype')
+    ;
+    font-size: ;
+}    
+
     body {
         direction: rtl;
+        font-family: Iransans;
     }
     
     * {
@@ -34,7 +45,7 @@
         direction: rtl;
         padding: 10px;
         line-height: 20px;
-        font-family: Tahoma;
+        font-family: Iransans;
         font-size: 14pt;
         color: black;
         transition-duration: 0.5s;
@@ -126,7 +137,7 @@
         margin: 50px 50px 50px 50px;
         text-align: center;
         font-size: 16pt;
-        font-family: tahoma;
+        font-family: Iransans;
         font-weight: bold;
     }
     /************ شروع بخش باکس ها***********/
@@ -137,7 +148,7 @@
         padding: 0px;
         margin: 1px;
         font-size: 11pt;
-        font-family: tahoma;
+        font-family: Iransans;
         text-align: justify;
         line-height: 1.5 !important;
         align-items: center;
@@ -176,11 +187,13 @@
         background-color: rgb(9, 33, 68);
         border-radius: 100px;
         float: left;
+        line-height: 28px;
         text-align: center;
         color: white;
+        
     }
     
-    .frame .text:hover {
+    .row div:hover .frame .text {
         background-color: white;
         cursor: pointer;
         color: rgb(9, 33, 68);
@@ -202,7 +215,7 @@
         margin: 30px;
         margin-top: 20px;
         font-size: 14pt;
-        font-family: tahoma border;
+        font-family: Iransans border;
     }
     
     .animate {
@@ -262,7 +275,7 @@
         color: white;
         padding-top: 50px;
         font-weight: bolder;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Iransans, sans-serif;
     }
     
     .panel-body {
@@ -286,12 +299,17 @@
         /*cursor: pointer;*/
         border: solid 5px rgb(9, 33, 68);
         transition: all .3s ease-in-out;
+        color:white !important;
+    }
+    .news-item:hover .news-text p , .news-title , .news-more{
+        color:white !important;
+
     }
     
     .news-title {
         font-size: 16px;
         font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Iransans, sans-serif;
         color: black;
         text-align: justify;
     }
@@ -299,14 +317,14 @@
     .news-text p {
         padding-top: 40px;
         font-size: 14px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Iransans, sans-serif;
         color: black;
         text-align: justify;
         line-height: 1.5 !important;
     }
     
     .news-more {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Iransans, sans-serif;
         color: black;
         direction: ltr;
         font-weight: bold;
@@ -331,7 +349,7 @@
         padding: 0px;
         margin: 1px;
         font-size: 14pt;
-        font-family: tahoma
+        font-family: Iransans
     }
     
     .row4 div {
@@ -351,7 +369,7 @@
         margin-top: 80px;
         font-size: 18px;
         font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Iransans, sans-serif;
         color: black;
         text-align: justify;
     }
@@ -362,7 +380,7 @@
         margin-bottom: 80px;
         padding-top: 20px;
         font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Iransans, sans-serif;
         color: black;
         text-align: justify;
         line-height: 1.5 !important;
@@ -500,14 +518,14 @@
     }
     
     .text p {
-        font-family: tahoma;
+        font-family: Iransans;
         font-size: 11pt;
         text-align: justify;
         line-height: 1.5 !important;
     }
     
     .text h4 {
-        font-family: tahoma;
+        font-family: Iransans;
         font-weight: bold;
         padding-bottom: 7px;
     }
@@ -555,7 +573,7 @@
         height: 80px;
         width: 50%;
         font-size: 12pt;
-        font-family: Tahoma;
+        font-family: Iransans;
         font-weight: bold;
         color: white;
         text-align: center;
@@ -566,7 +584,7 @@
         height: 80px;
         width: 50%;
         font-size: 18pt;
-        font-family: Tahoma;
+        font-family: Iransans;
         font-weight: bold;
         color: #00d2d3;
         text-align: center;
@@ -596,7 +614,7 @@
     
     .text h3 {
         font-size: 14pt;
-        font-family: tahoma;
+        font-family: Iransans;
         font-weight: bold;
         padding-bottom: 20px;
     }
@@ -633,7 +651,7 @@
         padding: 12p;
         margin: 10px;
         font-size: 14px;
-        font-family: tahoma;
+        font-family: Iransans;
         color: white;
         cursor: pointer;
         border-radius: 5px;
@@ -682,7 +700,7 @@
     
     .c-text p {
         font-size: 14px;
-        font-family: tahoma;
+        font-family: Iransans;
         font-weight: bold;
         margin-top: 10px;
     }
@@ -727,6 +745,7 @@
         position: absolute;
         margin-top: 10px;
         margin-right: 10px;
+        
     }
     
     .media:hover {
